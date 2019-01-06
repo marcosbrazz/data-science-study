@@ -433,6 +433,8 @@
 <node CREATED="1543783880480" ID="ID_521406812" MODIFIED="1543783888652" TEXT="non-overlapping clusters"/>
 <node CREATED="1543783966913" ID="ID_896617632" MODIFIED="1543783975613" TEXT="Minimize intra-cluster distances">
 <node CREATED="1543784067947" ID="ID_1122027495" MODIFIED="1543784073351" TEXT="Euclidian distance"/>
+<node CREATED="1546791266915" ID="ID_1910009915" MODIFIED="1546791282852" TEXT="Cosine similarity"/>
+<node CREATED="1546791288152" ID="ID_981466038" MODIFIED="1546791293564" TEXT="Average distance"/>
 <node COLOR="#999999" CREATED="1543784629860" ID="ID_1552661570" MODIFIED="1543785746381">
 <richcontent TYPE="NODE"><html>
   <head>
@@ -443,8 +445,7 @@
       Must understand the nature of data to choose a distance measurement
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <font NAME="SansSerif" SIZE="10"/>
 <icon BUILTIN="messagebox_warning"/>
 </node>
@@ -477,8 +478,7 @@
       between data points within a cluster
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node CREATED="1543786055720" ID="ID_1608510641" MODIFIED="1543786066068" TEXT="Indicate how dense are clusters"/>
 </node>
 </node>
@@ -499,10 +499,73 @@
 <node CREATED="1543783515496" ID="ID_1462448010" MODIFIED="1543783520132" TEXT="Fuzzy c-means"/>
 </node>
 <node CREATED="1543783416677" ID="ID_1257718812" MODIFIED="1543783616806" TEXT="Hierarchical clustering" VSHIFT="11">
-<node CREATED="1543783604506" ID="ID_771829293" MODIFIED="1543783611885" TEXT="Produces trees of clustering"/>
+<node CREATED="1543783604506" ID="ID_771829293" MODIFIED="1543783611885" TEXT="Produces trees of clustering">
+<node CREATED="1546792781786" ID="ID_241528871" MODIFIED="1546792790766" TEXT="represented by Dendogram"/>
+</node>
 <node CREATED="1543783669427" ID="ID_1344361377" MODIFIED="1543783675247" TEXT="Small datasets"/>
-<node CREATED="1543783624058" ID="ID_1908165718" MODIFIED="1543783629358" TEXT="Agglomeratives"/>
-<node CREATED="1543783630195" ID="ID_1880474465" MODIFIED="1543783639502" TEXT="Divisive"/>
+<node CREATED="1543783624058" ID="ID_1908165718" MODIFIED="1543783629358" TEXT="Agglomeratives">
+<node CREATED="1546792367059" ID="ID_1107744797" MODIFIED="1546792371151" TEXT="botton up">
+<node COLOR="#999999" CREATED="1546792411053" ID="ID_1699850991" MODIFIED="1546792437327" TEXT="starts in own cluster, compare pairs of clusters and merge them">
+<font NAME="SansSerif" SIZE="10"/>
+</node>
+<node CREATED="1546792963205" ID="ID_1644102442" MODIFIED="1546792984713" TEXT="Create n clusters, one for each datapoint">
+<icon BUILTIN="full-1"/>
+</node>
+<node CREATED="1546792989685" ID="ID_1715533511" MODIFIED="1546793001017" TEXT="Compute the proximity matrix">
+<icon BUILTIN="full-2"/>
+</node>
+<node CREATED="1546793010766" ID="ID_166266495" MODIFIED="1546793062210" TEXT="Repeat">
+<icon BUILTIN="full-3"/>
+<node CREATED="1546793019847" ID="ID_1040928919" MODIFIED="1546793045066" TEXT="Merge the two closest clusters">
+<node CREATED="1546793675583" ID="ID_1474761891" MODIFIED="1546793685963" TEXT="Distance between clusters">
+<node CREATED="1546793689191" ID="ID_500394106" MODIFIED="1546793724748" TEXT="Single-Linkage Cluster">
+<node COLOR="#999999" CREATED="1546793728384" ID="ID_1616765237" MODIFIED="1546793736314" TEXT="Minimum distance between clusters">
+<font NAME="SansSerif" SIZE="10"/>
+</node>
+</node>
+<node CREATED="1546793749448" ID="ID_52444121" MODIFIED="1546793762020" TEXT="Complete-Linkage Cluster">
+<node COLOR="#999999" CREATED="1546793765688" ID="ID_1524507593" MODIFIED="1546793776115" TEXT="Maximum distance between clusters">
+<font NAME="SansSerif" SIZE="10"/>
+</node>
+</node>
+<node CREATED="1546793797897" ID="ID_773014473" MODIFIED="1546793804557" TEXT="Average Linkage Cluster">
+<node COLOR="#999999" CREATED="1546793805905" ID="ID_13707196" MODIFIED="1546793815674" TEXT="Average distance between clusters">
+<font NAME="SansSerif" SIZE="10"/>
+</node>
+</node>
+<node CREATED="1546793821017" ID="ID_680095161" MODIFIED="1546793828237" TEXT="Centroid Linkage Cluster">
+<node COLOR="#999999" CREATED="1546793834313" ID="ID_153417520" MODIFIED="1546793857837" TEXT="Distance between cluster centroids">
+<font NAME="SansSerif" SIZE="10"/>
+</node>
+</node>
+</node>
+</node>
+<node CREATED="1546793050926" ID="ID_182995919" MODIFIED="1546793058986" TEXT="Update the proximity matrix"/>
+</node>
+<node CREATED="1546793500389" ID="ID_1046762965" MODIFIED="1546793514602" TEXT="Ultil only single cluster remains">
+<icon BUILTIN="full-4"/>
+</node>
+</node>
+<node CREATED="1546794050348" ID="ID_519980973" MODIFIED="1546794328275" TEXT="Advantages" VSHIFT="12">
+<node CREATED="1546794061052" ID="ID_583665901" MODIFIED="1546794089832" TEXT="Doesn&apos;t require to specify number of clusters"/>
+<node CREATED="1546794092124" ID="ID_1671296328" MODIFIED="1546794097432" TEXT="Easy to implement"/>
+<node CREATED="1546794101388" ID="ID_961810101" MODIFIED="1546794112640" TEXT="Dendogram helps to understand data"/>
+</node>
+<node CREATED="1546794117052" HGAP="15" ID="ID_1043802777" MODIFIED="1546794331211" TEXT="Disadvantages" VSHIFT="15">
+<node CREATED="1546794224126" ID="ID_22504599" MODIFIED="1546794258010" TEXT="Can&apos;t undo previews steps through algorithm"/>
+<node CREATED="1546794260806" ID="ID_1590297382" MODIFIED="1546794279434" TEXT="Generally, has long runtimes">
+<node CREATED="1546794569403" ID="ID_921325769" MODIFIED="1546794575766" TEXT="Not good for large datasets"/>
+</node>
+<node CREATED="1546794295167" ID="ID_1125784990" MODIFIED="1546794316827" TEXT="Sometimes is dificult to identify number of clusters in dendogram"/>
+</node>
+</node>
+<node CREATED="1543783630195" HGAP="23" ID="ID_1880474465" MODIFIED="1546793068524" TEXT="Divisive" VSHIFT="13">
+<node CREATED="1546792269154" ID="ID_1699584510" MODIFIED="1546792275094" TEXT="top down">
+<node COLOR="#999999" CREATED="1546792298578" ID="ID_1455339868" MODIFIED="1546792334546" TEXT="Observe a large cluster and break it down into smaller pieces">
+<font NAME="SansSerif" SIZE="10"/>
+</node>
+</node>
+</node>
 </node>
 <node CREATED="1543783440606" ID="ID_1731771880" MODIFIED="1543783739649" TEXT="Density-based clustering" VSHIFT="14">
 <node CREATED="1543783687524" ID="ID_801688368" MODIFIED="1543783696208" TEXT="Produces arbitrary shape clusters"/>
