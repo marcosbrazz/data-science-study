@@ -1,13 +1,13 @@
 <map version="1.0.1">
 <!-- To view this file, download free mind mapping software FreeMind from http://freemind.sourceforge.net -->
-<node CREATED="1535308852335" ID="ID_495337093" MODIFIED="1535312370328" STYLE="bubble" TEXT="Machine Learning">
+<node CREATED="1535308852335" ID="ID_495337093" MODIFIED="1549230502456" STYLE="bubble" TEXT="Machine Learning">
 <font BOLD="true" NAME="SansSerif" SIZE="14"/>
-<node COLOR="#990000" CREATED="1535313848706" FOLDED="true" ID="ID_1614390726" MODIFIED="1543785135212" POSITION="left" TEXT="Supervised Learning" VSHIFT="-83">
+<node COLOR="#990000" CREATED="1535313848706" ID="ID_1614390726" MODIFIED="1549229966317" POSITION="left" TEXT="Supervised Learning" VSHIFT="-83">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
 <node CREATED="1535308881762" HGAP="27" ID="ID_1237674882" MODIFIED="1543702004123" STYLE="bubble" TEXT="Classification " VSHIFT="-43">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
 <node CREATED="1535309190496" ID="ID_53585579" MODIFIED="1535309199101" TEXT="Predict class of a case"/>
-<node CREATED="1537132513547" ID="ID_135769754" MODIFIED="1537132526095" TEXT="Algorithms" VSHIFT="8">
+<node CREATED="1537132513547" FOLDED="true" ID="ID_135769754" MODIFIED="1552250406066" TEXT="Algorithms" VSHIFT="8">
 <node CREATED="1537132530163" ID="ID_658572627" MODIFIED="1537132538957" TEXT="Decision Trees">
 <node CREATED="1537716195306" ID="ID_366174086" MODIFIED="1537716315118" TEXT="Recursive partition">
 <node CREATED="1537716087689" ID="ID_1150863333" MODIFIED="1537716109865" TEXT="Choose an attribute from dataset">
@@ -45,10 +45,23 @@
 </node>
 <node CREATED="1537716755988" HGAP="19" ID="ID_467696528" MODIFIED="1537716775065" TEXT="Minimize the impurity each step" VSHIFT="11"/>
 </node>
+<node CREATED="1552246398390" HGAP="19" ID="ID_1393659301" MODIFIED="1552246457360" TEXT="Pros" VSHIFT="29">
+<node CREATED="1552246405507" ID="ID_1213817009" MODIFIED="1552246406551" TEXT="Easy to understand and interpret"/>
+<node CREATED="1552246422612" ID="ID_942653661" MODIFIED="1552246423663" TEXT="Require very little data preparation"/>
+<node CREATED="1552246449811" ID="ID_1440377476" MODIFIED="1552246451183" TEXT="The cost of using the tree for inference is logarithmic in the number of data points used to train the tree"/>
+</node>
+<node CREATED="1552246469668" ID="ID_926133439" MODIFIED="1552246496552" TEXT="Cons" VSHIFT="18">
+<node CREATED="1552246473060" ID="ID_1311878464" MODIFIED="1552246474079" TEXT="Overfitting is quite common">
+<node CREATED="1552246491780" ID="ID_53138480" MODIFIED="1552246492752" TEXT=" It&#x2019;s often recommended to perform some type of dimensionality reduction such as PCA"/>
+</node>
+<node CREATED="1552246514364" ID="ID_763730669" MODIFIED="1552246520832" TEXT="Vulnerable to becoming biased to the classes that have a majority in the dataset">
+<node CREATED="1552246535021" ID="ID_802935457" MODIFIED="1552247377717" TEXT="Do some kind of class balancing such as class weights, sampling, or a specialised loss function"/>
+</node>
+</node>
 </node>
 <node CREATED="1537132545283" ID="ID_1217358681" MODIFIED="1537132566328" TEXT="Na&#xef;ve Bayes"/>
 <node CREATED="1537132571675" ID="ID_111007382" MODIFIED="1537132582185" TEXT="Linear Discriminant Analysis"/>
-<node CREATED="1537132593395" ID="ID_904233126" MODIFIED="1537132602353" TEXT="K-Nearest Neighbor">
+<node CREATED="1537132593395" ID="ID_904233126" MODIFIED="1549230252391" TEXT="K-Nearest Neighbor (KNN)">
 <node CREATED="1537133142546" ID="ID_1757697356" MODIFIED="1537133259634" TEXT="Similiar cases of same class are near each other"/>
 <node CREATED="1537133263854" ID="ID_1591553730" MODIFIED="1537133326292" TEXT="The most neighbors with same class define the predicted class"/>
 <node CREATED="1537133352909" ID="ID_201860464" MODIFIED="1537133374404" TEXT="Use Euclidian distance to calculate"/>
@@ -148,7 +161,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1537134775507" ID="ID_265036794" MODIFIED="1543701950370" TEXT="Evaluation Model" VSHIFT="28">
+<node CREATED="1537134775507" FOLDED="true" ID="ID_265036794" MODIFIED="1552250446712" TEXT="Evaluation Model" VSHIFT="28">
 <node CREATED="1537134815219" ID="ID_1289879733" MODIFIED="1543701874902" TEXT="Jaccard index">
 <node CREATED="1537134871323" ID="ID_1275097805" MODIFIED="1537134996341">
 <richcontent TYPE="NODE"><html>
@@ -216,7 +229,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1535308869637" FOLDED="true" HGAP="16" ID="ID_1761901146" MODIFIED="1543785132287" STYLE="bubble" TEXT="Regression/Estimation">
+<node CREATED="1535308869637" HGAP="16" ID="ID_1761901146" MODIFIED="1552250419764" STYLE="bubble" TEXT="Regression/Estimation">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
 <node CREATED="1535309113152" ID="ID_38658008" MODIFIED="1535309133534" TEXT="Predict continuous values">
 <node CREATED="1535309151760" ID="ID_1204087170" MODIFIED="1535309169821" TEXT="Case of price of a house..."/>
@@ -353,7 +366,10 @@
 </node>
 </node>
 </node>
-<node CREATED="1536710223906" ID="ID_1693016768" MODIFIED="1536710234177" TEXT="MAE (mean absolute error)"/>
+<node CREATED="1536710223906" ID="ID_1693016768" MODIFIED="1552250768200" TEXT="MAE (mean absolute error)" VSHIFT="20">
+<node CREATED="1552250722467" ID="ID_1276044435" MODIFIED="1552250755536" TEXT="absolute_error=actual&#x2212;predicted"/>
+<node CREATED="1552250724379" ID="ID_1513261339" MODIFIED="1552250745944" TEXT="Avarage of absolute errors"/>
+</node>
 <node CREATED="1536710242826" ID="ID_797690613" MODIFIED="1536710273230" TEXT="RMSE (root mean square error)" VSHIFT="34"/>
 <node CREATED="1536710734975" ID="ID_532814293" MODIFIED="1536710746965" TEXT="RSE (relative square area">
 <node CREATED="1536710748015" ID="ID_646518668" MODIFIED="1536710753133" TEXT="Most popular"/>
@@ -385,7 +401,7 @@
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
 </node>
 </node>
-<node COLOR="#990000" CREATED="1535314049905" HGAP="27" ID="ID_1246338472" MODIFIED="1548619212697" POSITION="right" TEXT="Unsupervised Learning" VSHIFT="27">
+<node COLOR="#990000" CREATED="1535314049905" HGAP="27" ID="ID_1246338472" MODIFIED="1549229975874" POSITION="right" TEXT="Unsupervised Learning" VSHIFT="27">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
 <node CREATED="1535309754972" HGAP="17" ID="ID_782429593" MODIFIED="1535314144157" TEXT="Dimension Reduction" VSHIFT="14">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
@@ -397,7 +413,7 @@
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
 </node>
 </node>
-<node CREATED="1535308939049" FOLDED="true" HGAP="17" ID="ID_1423633852" MODIFIED="1548619374560" STYLE="bubble" TEXT="Clustering" VSHIFT="13">
+<node CREATED="1535308939049" HGAP="17" ID="ID_1423633852" MODIFIED="1549229538002" STYLE="bubble" TEXT="Clustering" VSHIFT="13">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
 <node CREATED="1535309234319" ID="ID_1266368841" MODIFIED="1535309238189" TEXT="Segmentation"/>
 <node CREATED="1535309254223" ID="ID_1654335031" MODIFIED="1535309259469" TEXT="Summarization"/>
@@ -625,7 +641,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1535309777044" ID="ID_1966847875" MODIFIED="1548619032968" POSITION="left" TEXT="Recommendation Systems" VSHIFT="62">
+<node CREATED="1535309777044" FOLDED="true" ID="ID_1966847875" MODIFIED="1552246140959" POSITION="left" TEXT="Recommendation Systems" VSHIFT="62">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
 <node COLOR="#999999" CREATED="1535310446632" ID="ID_734411224" MODIFIED="1548619074179">
 <richcontent TYPE="NODE"><html>
@@ -651,25 +667,35 @@
 <node COLOR="#999999" CREATED="1548619427269" ID="ID_578679473" MODIFIED="1548619531371" TEXT="Show more content likely the ones I liked before">
 <font NAME="SansSerif" SIZE="10"/>
 </node>
-</node>
-<node CREATED="1548619054710" ID="ID_1406421002" MODIFIED="1548619069419" TEXT="Collaborative Filtering">
-<node COLOR="#999999" CREATED="1548619469166" ID="ID_619320126" MODIFIED="1548619544635" TEXT="Show me popular content among my neighbors">
-<font NAME="SansSerif" SIZE="10"/>
-</node>
-</node>
-</node>
-<node CREATED="1548619599792" ID="ID_1971016865" MODIFIED="1548619608467" TEXT="Implementations" VSHIFT="19">
+<node CREATED="1548619599792" ID="ID_1971016865" MODIFIED="1549214425646" TEXT="Implementations" VSHIFT="58">
 <node CREATED="1548619609464" ID="ID_1872567917" MODIFIED="1548619614107" TEXT="Memory based">
 <node CREATED="1548619639256" ID="ID_883990060" MODIFIED="1548619675197" TEXT="Uses the entire user-item dataset to build a recommendation system"/>
 <node CREATED="1548619692777" ID="ID_75042384" MODIFIED="1548619762294" TEXT="Approximate users / items" VSHIFT="14">
 <node CREATED="1548619721337" ID="ID_431040312" MODIFIED="1548619726965" TEXT="statistics">
-<node CREATED="1548619730801" ID="ID_323551953" MODIFIED="1548619737325" TEXT="Pearson Correlation"/>
+<node CREATED="1548619730801" ID="ID_323551953" MODIFIED="1548619737325" TEXT="Pearson Correlation">
+<node COLOR="#999999" CREATED="1549224003713" ID="ID_1353515128" MODIFIED="1549224098619">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <font color="#666666" face="Helvetica Neue, Helvetica, Arial, sans-serif">Used to measure the strength of a </font>
+    </p>
+    <p>
+      <font color="#666666" face="Helvetica Neue, Helvetica, Arial, sans-serif">linear association between two variables</font>
+    </p>
+  </body>
+</html></richcontent>
+<font NAME="SansSerif" SIZE="10"/>
+</node>
+</node>
 <node CREATED="1548619740682" ID="ID_997988161" MODIFIED="1548619746614" TEXT="Cosine Similarity"/>
 <node CREATED="1548619751202" ID="ID_538008220" MODIFIED="1548619758174" TEXT="Euclidean Distance"/>
 </node>
 </node>
 </node>
-<node CREATED="1548619614375" ID="ID_665264653" MODIFIED="1548619618796" TEXT="Model based">
+<node CREATED="1548619614375" ID="ID_665264653" MODIFIED="1549214405736" TEXT="Model based">
 <node CREATED="1548619804931" ID="ID_698313882" MODIFIED="1548619811134" TEXT="Develop a model">
 <node CREATED="1548619827363" ID="ID_1065374294" MODIFIED="1548619832127" TEXT="Learn preferences"/>
 </node>
@@ -677,6 +703,93 @@
 <node CREATED="1548619885324" ID="ID_1972879826" MODIFIED="1548619888336" TEXT="Regression"/>
 <node CREATED="1548619888724" ID="ID_1869798984" MODIFIED="1548619891816" TEXT="Clustering"/>
 <node CREATED="1548619895108" ID="ID_1054064693" MODIFIED="1548619898648" TEXT="Classification"/>
+</node>
+</node>
+</node>
+</node>
+<node CREATED="1548619054710" ID="ID_1406421002" MODIFIED="1549214531703" TEXT="Collaborative Filtering" VSHIFT="39">
+<node COLOR="#999999" CREATED="1548619469166" ID="ID_619320126" MODIFIED="1548619544635" TEXT="Show me popular content among my neighbors">
+<font NAME="SansSerif" SIZE="10"/>
+</node>
+<node CREATED="1549214650238" ID="ID_922273721" MODIFIED="1549214678329" TEXT="Approach" VSHIFT="11">
+<node CREATED="1549214655756" ID="ID_1492925701" MODIFIED="1549214666641" TEXT="User-based">
+<node COLOR="#999999" CREATED="1549214701893" ID="ID_1074298186" MODIFIED="1549214741930" TEXT="user neighborhood similarity">
+<font NAME="SansSerif" SIZE="10"/>
+</node>
+<node CREATED="1549215308976" ID="ID_227618135" MODIFIED="1549216641176" TEXT="Calculate the similarity matrix" VSHIFT="5">
+<icon BUILTIN="full-1"/>
+<node COLOR="#999999" CREATED="1549216642379" ID="ID_224255134" MODIFIED="1549216648375" TEXT="distance between users and active user">
+<font NAME="SansSerif" SIZE="10"/>
+<node COLOR="#999999" CREATED="1548619730801" ID="ID_1254634797" MODIFIED="1549216667221" TEXT="Pearson Correlation">
+<font NAME="SansSerif" SIZE="10"/>
+</node>
+<node COLOR="#999999" CREATED="1548619740682" ID="ID_1032757378" MODIFIED="1549216667813" TEXT="Cosine Similarity">
+<font NAME="SansSerif" SIZE="10"/>
+</node>
+<node COLOR="#999999" CREATED="1548619751202" ID="ID_1781884963" MODIFIED="1549216668389" TEXT="Euclidean Distance">
+<font NAME="SansSerif" SIZE="10"/>
+</node>
+</node>
+<node COLOR="#999999" CREATED="1549222165530" ID="ID_988459052" MODIFIED="1549222175702" TEXT="Machine learning algorithms">
+<font NAME="SansSerif" SIZE="10"/>
+</node>
+</node>
+<node CREATED="1549215389960" ID="ID_203606007" MODIFIED="1549216434172" TEXT="Create a weighted ratings matrix" VSHIFT="8">
+<icon BUILTIN="full-2"/>
+<node COLOR="#999999" CREATED="1549215473977" ID="ID_679084337" MODIFIED="1549216430628" TEXT="Calculate the similarity of users to active user" VSHIFT="9">
+<font NAME="SansSerif" SIZE="10"/>
+</node>
+<node COLOR="#999999" CREATED="1549215592395" ID="ID_98640891" MODIFIED="1549215678610">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Represents the users neighbour's
+    </p>
+    <p>
+      opinion about the recommendations
+    </p>
+  </body>
+</html></richcontent>
+<font NAME="SansSerif" SIZE="10"/>
+</node>
+<node CREATED="1549216181772" ID="ID_988803988" MODIFIED="1549216283908" TEXT="Multiply the similarity to the users ratings" VSHIFT="11"/>
+</node>
+<node CREATED="1549216473791" ID="ID_1123905124" MODIFIED="1549216515725" TEXT="Generate recommendation matrix" VSHIFT="10">
+<icon BUILTIN="full-3"/>
+<node CREATED="1549216498953" ID="ID_446556741" MODIFIED="1549216512277" TEXT="Aggregate weightened rates"/>
+<node CREATED="1549216536017" ID="ID_308657524" MODIFIED="1549216604302" TEXT="Normalize" VSHIFT="2">
+<node CREATED="1549216555410" ID="ID_576545433" MODIFIED="1549216589080" TEXT="Divide by sum of similarity index for users"/>
+</node>
+</node>
+<node CREATED="1549217151089" HGAP="21" ID="ID_353176956" MODIFIED="1549217210006" TEXT="Result" VSHIFT="22">
+<font NAME="SansSerif" SIZE="12"/>
+<icon BUILTIN="full-4"/>
+<node CREATED="1549217160890" ID="ID_601848859" MODIFIED="1549217202038" TEXT="Potential rating the active user will give to these recommendations"/>
+</node>
+</node>
+<node CREATED="1549214671204" ID="ID_1386914551" MODIFIED="1549215411309" TEXT="Item-based" VSHIFT="24">
+<node COLOR="#999999" CREATED="1549214730101" ID="ID_172719814" MODIFIED="1549214742687" TEXT="Item similariry">
+<font NAME="SansSerif" SIZE="10"/>
+</node>
+</node>
+</node>
+<node CREATED="1549217418453" ID="ID_1328605339" MODIFIED="1549217717180" TEXT="Challenges" VSHIFT="27">
+<node CREATED="1549217427749" HGAP="17" ID="ID_1393158765" MODIFIED="1549217726660" TEXT="Data Sparsity" VSHIFT="9">
+<node CREATED="1549217761033" ID="ID_1008218849" MODIFIED="1549217806190" TEXT="Large dataset of &apos;users&apos; who rated limited number of items"/>
+</node>
+<node CREATED="1549217436261" ID="ID_1041603149" MODIFIED="1549217721740" TEXT="Cold start" VSHIFT="11">
+<node CREATED="1549217919923" ID="ID_415669744" MODIFIED="1549217942192" TEXT="New user, empty profile"/>
+<node CREATED="1549217966029" ID="ID_1802429505" MODIFIED="1549217983657" TEXT="New item, empty ratings"/>
+</node>
+<node CREATED="1549217443653" ID="ID_1248735801" MODIFIED="1549217720228" TEXT="Scalability" VSHIFT="20">
+<node CREATED="1549218063815" ID="ID_1469663309" MODIFIED="1549218125317" TEXT="As dataset grow, filtering algorithm grow in computation"/>
+</node>
+<node CREATED="1549218142857" ID="ID_498939209" MODIFIED="1549218185646" TEXT="Solutions" VSHIFT="11">
+<node CREATED="1549218152946" ID="ID_1290945138" MODIFIED="1549218180207" TEXT="Hybrid-based recommenders"/>
+</node>
 </node>
 </node>
 </node>
