@@ -161,8 +161,8 @@
 </node>
 </node>
 </node>
-<node CREATED="1537134775507" ID="ID_265036794" MODIFIED="1555275190741" TEXT="Evaluation Model" VSHIFT="28">
-<node CREATED="1537134815219" ID="ID_1289879733" MODIFIED="1543701874902" TEXT="Jaccard index">
+<node CREATED="1537134823579" HGAP="21" ID="ID_765837597" MODIFIED="1555783547848" TEXT="Evaluation Metrics" VSHIFT="21">
+<node CREATED="1537134815219" HGAP="22" ID="ID_1289879733" MODIFIED="1555783584073" TEXT="Jaccard index" VSHIFT="-33">
 <node CREATED="1537134871323" ID="ID_1275097805" MODIFIED="1537134996341">
 <richcontent TYPE="NODE"><html>
   <head>
@@ -185,8 +185,7 @@
 </node>
 <node CREATED="1543701963790" ID="ID_58546206" MODIFIED="1543701976074" TEXT="Accuracy metric"/>
 </node>
-<node CREATED="1537134823579" HGAP="21" ID="ID_765837597" MODIFIED="1543701944297" TEXT="F1-score" VSHIFT="21">
-<node CREATED="1537135067329" ID="ID_1179042029" MODIFIED="1543165942879" TEXT="Confusion Matrix">
+<node CREATED="1537135067329" ID="ID_1179042029" MODIFIED="1555783721089" TEXT="Confusion Matrix">
 <node CREATED="1543165702378" ID="ID_1174002244" MODIFIED="1543165715383">
 <richcontent TYPE="NODE"><html>
   <head>
@@ -200,22 +199,82 @@
 </node>
 <node CREATED="1537135911595" ID="ID_1334204124" MODIFIED="1537137195303" TEXT="Precision" VSHIFT="15">
 <node CREATED="1555276159713" ID="ID_782213777" MODIFIED="1555276615463" TEXT="daqueles que classifiquei como sendo de uma classe, quantos efetivamente eram?"/>
+<node CREATED="1555796431777" ID="ID_1564801230" MODIFIED="1555796432509" TEXT="how good a model is at predicting the positive class"/>
+<node CREATED="1555787450605" ID="ID_881125776" MODIFIED="1555787459250" TEXT="Rigorosidade no acerto"/>
 <node CREATED="1555276827424" ID="ID_784292994" MODIFIED="1555276858284" TEXT="Precision = TP/(TP + FP)"/>
 </node>
 <node CREATED="1537136036698" ID="ID_1933769478" MODIFIED="1537137193511" TEXT="Recall" VSHIFT="11">
 <node CREATED="1555276515826" ID="ID_721223075" MODIFIED="1555276623047" TEXT="Dentre todos os individuos de uma classe, quantos eu classifiquei como sendo desta classe ?"/>
+<node CREATED="1555796542907" ID="ID_751817363" MODIFIED="1555796543687" TEXT="how good the model is at predicting the positive class when the actual outcome is positive."/>
+<node CREATED="1555787461118" ID="ID_930855833" MODIFIED="1555787466618" TEXT="Disposi&#xe7;&#xe3;o para errar"/>
 <node CREATED="1555276704757" ID="ID_1851710544" MODIFIED="1555276813650" TEXT="Recall = TP/(TP + FN)"/>
 </node>
-<node CREATED="1543168096883" HGAP="21" ID="ID_1784970856" MODIFIED="1543168115175" TEXT="Used for multiclass classification" VSHIFT="8"/>
-<node CREATED="1537137393417" HGAP="21" ID="ID_1940744365" MODIFIED="1537137439901" TEXT="F-score" VSHIFT="13">
+<node CREATED="1555783768857" HGAP="21" ID="ID_1922118028" MODIFIED="1555783792276" TEXT="Accuracy" VSHIFT="19">
+<node CREATED="1555783823152" ID="ID_556146282" MODIFIED="1555783848556" TEXT="Dentre todo o sample, quantos eu classifiquei corretamente"/>
+<node CREATED="1555783784536" ID="ID_677442477" MODIFIED="1555783785740" TEXT="Accuracy = (TP+TN)/(TP+FP+FN+TN)"/>
+<node CREATED="1555786586394" HGAP="21" ID="ID_554534589" MODIFIED="1555786638184" TEXT="Disadvantages" VSHIFT="32">
+<node CREATED="1555786638176" ID="ID_603632130" MODIFIED="1555786659856" TEXT="Don&apos;t take account on ">
+<node CREATED="1555786599178" ID="ID_1523212456" MODIFIED="1555786617809" TEXT="False Positives"/>
+<node CREATED="1555786621923" ID="ID_1647563983" MODIFIED="1555786627719" TEXT="sample distribution"/>
+</node>
+</node>
+</node>
+<node CREATED="1537137393417" ID="ID_1940744365" MODIFIED="1555783795196" TEXT="F-score" VSHIFT="27">
 <node CREATED="1537137402993" ID="ID_1148330274" MODIFIED="1537137433519" TEXT="2*(prec*rec)/(prec + rec)"/>
 <node CREATED="1543162803060" ID="ID_448765068" MODIFIED="1543162804256" TEXT="the harmonic mean of precision and recall"/>
 <node CREATED="1543703515533" ID="ID_623952038" MODIFIED="1543703516570" TEXT="good way to show that a classifer has a good value for both recall and precision"/>
 <node CREATED="1543703693521" ID="ID_1571631301" MODIFIED="1543703708845" TEXT="Values from 0 - 1."/>
 <node CREATED="1543703709145" ID="ID_724170091" MODIFIED="1543703719965" TEXT="1 is the best score"/>
 </node>
+<node CREATED="1555790952371" ID="ID_1132828383" MODIFIED="1555791013682" TEXT="ROC Curve" VSHIFT="31">
+<node CREATED="1555790965013" ID="ID_192749534" MODIFIED="1555801443339" TEXT="balanced dataset"/>
+<node CREATED="1555790992277" ID="ID_1664531193" MODIFIED="1555791008153" TEXT="For models that predict probability"/>
+<node CREATED="1555791034262" ID="ID_1598152542" MODIFIED="1555791038234" TEXT="Binary models"/>
+<node CREATED="1555791152408" ID="ID_377198460" MODIFIED="1555791155965" TEXT="Plots the false alarm rate versus the hit rate">
+<node COLOR="#999999" CREATED="1555791171449" ID="ID_499365175" MODIFIED="1555791235019">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <font color="#000000">False positive rate (x-axis) versus the true positive rate (y-axis) </font>
+    </p>
+    <p>
+      <font color="#000000" face="Helvetica Neue, Helvetica, sans-serif">for a number of different candidate threshold values between 0.0 and 1.0</font>
+    </p>
+  </body>
+</html>
+</richcontent>
+<font NAME="SansSerif" SIZE="10"/>
 </node>
-<node CREATED="1537134831307" ID="ID_1062271131" MODIFIED="1543162811624" TEXT="Log loss" VSHIFT="25">
+</node>
+<node CREATED="1555795598188" ID="ID_268617817" MODIFIED="1555795636957">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      You may find the best threshold to balance between&#160;
+    </p>
+    <p>
+      TP and FP
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+</node>
+<node CREATED="1555798335607" ID="ID_1177058090" MODIFIED="1555798519878" TEXT="Precision-Recall Curve" VSHIFT="22">
+<node CREATED="1555798390728" ID="ID_671493810" MODIFIED="1555801453051" TEXT="imbalanced dataset"/>
+</node>
+<node CREATED="1555801180091" ID="ID_1316628067" MODIFIED="1555801427834" TEXT="Matthews Correlation Coefficient" VSHIFT="12">
+<node CREATED="1555801226452" ID="ID_752192012" MODIFIED="1555801458723" TEXT="imbalanced dataset"/>
+<node CREATED="1555801384998" ID="ID_424819601" MODIFIED="1555801419178" TEXT="MCC = (TP * TN - FP * FN)/[(TP + FP) * (FN + TN) * (FP + TN) * (TP + FN)]^(1/2)" VSHIFT="2"/>
+<node CREATED="1555801239956" ID="ID_716346102" MODIFIED="1555801240408" TEXT="https://lettier.github.io/posts/2016-08-05-matthews-correlation-coefficient.html"/>
+</node>
+<node CREATED="1537134831307" ID="ID_1062271131" MODIFIED="1555801496040" TEXT="Log loss" VSHIFT="25">
 <node CREATED="1537137674319" ID="ID_982790660" MODIFIED="1537137685693" TEXT="Probability of a class"/>
 <node CREATED="1537137588592" ID="ID_1837487638" MODIFIED="1537137658637" TEXT="Measure performance when the output is a probability between 0 - 1"/>
 <node CREATED="1537137769862" ID="ID_356902506" MODIFIED="1537137781178">
