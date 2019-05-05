@@ -2,7 +2,7 @@
 <!-- To view this file, download free mind mapping software FreeMind from http://freemind.sourceforge.net -->
 <node CREATED="1535308852335" ID="ID_495337093" MODIFIED="1549230502456" STYLE="bubble" TEXT="Machine Learning">
 <font BOLD="true" NAME="SansSerif" SIZE="14"/>
-<node COLOR="#990000" CREATED="1535313848706" ID="ID_1614390726" MODIFIED="1549229966317" POSITION="left" TEXT="Supervised Learning" VSHIFT="-83">
+<node COLOR="#990000" CREATED="1535313848706" FOLDED="true" ID="ID_1614390726" MODIFIED="1557089181068" POSITION="left" TEXT="Supervised Learning" VSHIFT="-83">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
 <node CREATED="1535308881762" HGAP="27" ID="ID_1237674882" MODIFIED="1543702004123" STYLE="bubble" TEXT="Classification " VSHIFT="-43">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
@@ -244,8 +244,7 @@
       <font color="#000000" face="Helvetica Neue, Helvetica, sans-serif">for a number of different candidate threshold values between 0.0 and 1.0</font>
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <font NAME="SansSerif" SIZE="10"/>
 </node>
 </node>
@@ -262,8 +261,7 @@
       TP and FP
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 <node CREATED="1555798335607" ID="ID_1177058090" MODIFIED="1555798519878" TEXT="Precision-Recall Curve" VSHIFT="22">
@@ -466,7 +464,7 @@
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
 </node>
 </node>
-<node COLOR="#990000" CREATED="1535314049905" HGAP="27" ID="ID_1246338472" MODIFIED="1549229975874" POSITION="right" TEXT="Unsupervised Learning" VSHIFT="27">
+<node COLOR="#990000" CREATED="1535314049905" FOLDED="true" HGAP="27" ID="ID_1246338472" MODIFIED="1557089184534" POSITION="right" TEXT="Unsupervised Learning" VSHIFT="27">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
 <node CREATED="1535309754972" HGAP="17" ID="ID_782429593" MODIFIED="1535314144157" TEXT="Dimension Reduction" VSHIFT="14">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
@@ -931,6 +929,18 @@
   </body>
 </html></richcontent>
 </node>
+</node>
+</node>
+</node>
+<node CREATED="1557089188613" HGAP="19" ID="ID_1927122418" MODIFIED="1557095774131" POSITION="left" TEXT="BIAS" VSHIFT="54">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+<node CREATED="1557089293144" ID="ID_1890946932" MODIFIED="1557091093948" TEXT="Variables not used in prediction might be associated with biased outcomes"/>
+<node CREATED="1557089630391" ID="ID_1896897569" MODIFIED="1557089640234" TEXT="Latent variables" VSHIFT="11">
+<node CREATED="1557089646150" ID="ID_1679153325" MODIFIED="1557089712684" TEXT="Help encode variable that are associated with bias"/>
+</node>
+<node CREATED="1557095774123" ID="ID_912558877" MODIFIED="1557095782577" TEXT="Cancel the bias" VSHIFT="30">
+<node COLOR="#999999" CREATED="1557089427363" HGAP="18" ID="ID_393262703" MODIFIED="1557095785745" TEXT="https://towardsdatascience.com/preventing-machine-learning-bias-d01adfe9f1fa" VSHIFT="6">
+<font NAME="SansSerif" SIZE="10"/>
 </node>
 </node>
 </node>
